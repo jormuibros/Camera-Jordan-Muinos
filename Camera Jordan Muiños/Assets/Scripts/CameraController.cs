@@ -16,13 +16,14 @@ public class CameraController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F1))
         {
-            cameras[0].SetActive(true);
-            cameras[1].SetActive(false);
+        cameras[0].SetActive(false);
+        cameras[1].SetActive(true);
         }
         if (Input.GetKeyDown(KeyCode.F2))
         {
-            cameras[0].SetActive(false);
-            cameras[1].SetActive(true);
+        cameras[0].SetActive(true);
+        cameras[1].SetActive(false);
         }
     }
 }
+
